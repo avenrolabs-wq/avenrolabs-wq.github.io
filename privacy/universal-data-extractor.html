@@ -31,7 +31,7 @@
   <main id="main" class="policy">
     <div class="wrap">
       <h1>Universal Data Extractor Privacy Policy</h1>
-      <p class="policy__meta">Last updated: September 10, 2026</p>
+      <p class="policy__meta">Last updated: September 11, 2026</p>
 
       <h2>1. Overview</h2>
       <p>
@@ -49,8 +49,9 @@
           locally in your browser and not sent to Avenro Labs or Lemon Squeezy.
         </li>
         <li>
-          <strong>License / payment data</strong> — information used only if you purchase and activate
-          optional Pro features, handled with Lemon Squeezy for payment and license verification.
+          <strong>License / entitlement data</strong> — information used only if you purchase and activate
+          optional Pro features, including license verification with Lemon Squeezy. Payment card details are
+          handled by Lemon Squeezy outside the Extension and are not data handled by the Extension.
         </li>
       </ul>
       <p>
@@ -64,16 +65,24 @@
       </p>
       <ul>
         <li>
-          Extracted website content from a page you explicitly scan or export (tables, lists, structured
-          data, and optionally links or image URLs).
+          <strong>Website content</strong> — read locally only after an explicit user action (Scan Page or
+          export), including tables, lists, structured data, and optionally links or image URLs.
         </li>
         <li>
-          License-related values you enter or that the Extension generates for Pro activation, validation,
-          or deactivation (such as a license key and installation identifiers).
+          <strong>Authentication / entitlement information</strong> — the Pro license key you enter, used as
+          an entitlement credential for activation, validation, and deactivation, along with related
+          installation and instance identifiers.
+        </li>
+        <li>
+          <strong>Personally identifiable information (possible, not persisted)</strong> — Lemon Squeezy’s
+          licensing API response may include account or purchase metadata such as customer name or customer
+          email. The Extension does not persist these values and does not use them for analytics,
+          advertising, profiling, marketing, or tracking.
         </li>
       </ul>
       <p>
-        These categories are handled differently, as described below.
+        These categories are handled differently, as described below. Payment card numbers and other payment
+        credentials are not received or stored by the Extension.
       </p>
 
       <h2>3. Extracted website content</h2>
@@ -100,12 +109,15 @@
         Extractor Pro: a $9.99 one-time lifetime purchase with up to 3 activations.
       </p>
       <p>
-        Payments are processed by Lemon Squeezy outside the extension. Avenro Labs does not process card
-        payments inside the Extension, and Google does not process these payments.
+        Payment card details are handled by Lemon Squeezy outside the Extension. Universal Data Extractor
+        does not receive or store card numbers or other payment credentials. Avenro Labs does not process
+        card payments inside the Extension, and Google does not process these payments. Payment card data
+        is not classified as data handled by the Extension.
       </p>
       <p>
         When a user activates, validates, or deactivates a Pro license, the Extension communicates with
-        Lemon Squeezy’s licensing service. License verification may transmit:
+        Lemon Squeezy’s licensing service. The Pro license key is used as an entitlement (authentication)
+        credential. License verification may transmit:
       </p>
       <ul>
         <li>the license key entered by the user</li>
@@ -119,7 +131,14 @@
         addresses for licensing.
       </p>
       <p>
-        License activation state is stored locally in Chrome extension storage.
+        Lemon Squeezy’s licensing API response may also include account or purchase metadata such as
+        customer name or customer email. The Extension does not intentionally store or use customer name or
+        email. Those values are not required for webpage extraction and are not used for analytics,
+        advertising, profiling, marketing, or user tracking.
+      </p>
+      <p>
+        License activation state is stored locally in Chrome extension storage, limited to the values listed
+        in Local storage below.
       </p>
 
       <h2>5. Data transmission</h2>
@@ -128,10 +147,11 @@
         Lemon Squeezy. Not sent to other third-party servers by the Extension.
       </p>
       <p>
-        <strong>License / payment data:</strong> If you choose to activate, validate, or deactivate Pro, the
-        Extension sends license verification data (license key and installation/instance identifiers as
-        described above) to Lemon Squeezy. Payment details for purchases are handled by Lemon Squeezy outside
-        the Extension.
+        <strong>License / entitlement data:</strong> If you choose to activate, validate, or deactivate Pro,
+        the Extension sends license verification data (license key and installation/instance identifiers as
+        described above) to Lemon Squeezy. Lemon Squeezy may return license status and, in some responses,
+        customer/account metadata such as name or email. Payment card details for purchases are handled by
+        Lemon Squeezy outside the Extension and are not transmitted through or stored by the Extension.
       </p>
 
       <h2>6. Local storage</h2>
@@ -150,13 +170,16 @@
         <li>last successful validation timestamp</li>
       </ul>
       <p>
-        The Extension does not store customer name or email for licensing.
+        The Extension does not persist customer name or customer email in Chrome storage, even if those
+        fields appear in a Lemon Squeezy license API response.
       </p>
 
       <h2>7. Third-party services</h2>
       <p>
         Lemon Squeezy is the payment and licensing provider for optional Pro purchases. Purchases completed
-        through Lemon Squeezy are also subject to Lemon Squeezy’s own privacy practices and terms.
+        through Lemon Squeezy are also subject to Lemon Squeezy’s own privacy practices and terms. Lemon
+        Squeezy may return customer or account metadata as part of its license API response; as noted above,
+        the Extension does not intentionally store or use customer name or email.
       </p>
       <p>
         Avenro Labs does not sell user data. Extracted website content is not shared with third parties.
@@ -226,7 +249,9 @@
       </p>
       <p>
         Extracted website content is not used for advertising, profiling, creditworthiness determinations,
-        or unrelated purposes. Avenro Labs does not sell user data.
+        or unrelated purposes. Any customer name or email that may appear in a Lemon Squeezy license response
+        is not used for analytics, advertising, profiling, marketing, tracking, or other unrelated purposes.
+        Avenro Labs does not sell user data. The Extension does not include analytics or user tracking.
       </p>
 
       <h2>13. Changes to this policy</h2>
