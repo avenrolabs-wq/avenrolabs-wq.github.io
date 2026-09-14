@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Avenro Labs — Software Products</title>
-  <meta name="description" content="Avenro Labs builds focused software tools including Universal Data Extractor for Chrome.">
+  <meta name="description" content="Avenro Labs builds focused software tools including Universal Data Extractor for Chrome, available on the Chrome Web Store.">
   <meta property="og:title" content="Avenro Labs — Software Products">
-  <meta property="og:description" content="Avenro Labs builds focused software tools including Universal Data Extractor for Chrome.">
+  <meta property="og:description" content="Avenro Labs builds focused software tools including Universal Data Extractor for Chrome, available on the Chrome Web Store.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://avenrolabs-wq.github.io/">
   <meta name="theme-color" content="#2563EB">
@@ -36,7 +36,10 @@
         <p class="hero__lead">
           Avenro Labs builds focused software tools designed to make everyday digital work simpler.
         </p>
-        <a class="button" href="#products">View Universal Data Extractor</a>
+        <div class="hero__actions">
+          <a class="button" href="https://chromewebstore.google.com/detail/mjefchghiimmniobemanfgddlcccpein">Add to Chrome</a>
+          <a class="button button--secondary" href="#products">Product details</a>
+        </div>
       </div>
     </section>
 
@@ -48,18 +51,39 @@
         <article class="product" aria-labelledby="ude-heading">
           <h3 id="ude-heading" class="product__name">Universal Data Extractor</h3>
           <p class="product__desc">
-            Extract tables, lists, and structured page data to CSV, Excel, or JSON.
+            Extract structured webpage data to CSV, Excel, or JSON.
           </p>
           <ul class="feature-list">
-            <li>Detect HTML tables</li>
-            <li>Detect ARIA tables and grids</li>
-            <li>Extract repeated structured data</li>
-            <li>Select and reorder fields</li>
-            <li>Export CSV, Excel, and JSON</li>
-            <li>Optional link and image URL extraction</li>
-            <li>Local browser processing</li>
+            <li>HTML and ARIA tables</li>
+            <li>Repeated structured lists and cards</li>
+            <li>Field selection</li>
+            <li>Local exports</li>
+            <li>Optional Pro features</li>
           </ul>
-          <p class="product__status">Coming soon to the Chrome Web Store</p>
+
+          <div class="product-plans">
+            <div class="product-plan">
+              <h4 class="product-plan__title">Free</h4>
+              <p class="product-plan__text">CSV export up to 100 rows/items.</p>
+            </div>
+            <div class="product-plan">
+              <h4 class="product-plan__title">Pro</h4>
+              <p class="product-plan__text">$9.99 one-time lifetime.</p>
+              <p class="product-plan__label">Pro unlocks:</p>
+              <ul class="feature-list product-plan__list">
+                <li>Exports up to 5,000 rows/items</li>
+                <li>JSON</li>
+                <li>Excel/XLSX</li>
+                <li>Field reordering</li>
+                <li>Link and image URL extraction</li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="product__status">Universal Data Extractor is now available on the Chrome Web Store.</p>
+          <p class="product__actions">
+            <a class="button" href="https://chromewebstore.google.com/detail/mjefchghiimmniobemanfgddlcccpein">Add to Chrome</a>
+          </p>
         </article>
       </div>
     </section>
@@ -69,8 +93,9 @@
         <h2 id="privacy-heading" class="section__title">Privacy-first by design</h2>
         <div class="privacy-panel">
           <p>
-            Extracted website content stays in your browser. Optional Pro license verification
-            communicates only the license information needed for activation with Lemon Squeezy.
+            Extracted webpage content stays in the browser. Optional Pro license verification
+            communicates only licensing information required for activation/validation with Lemon
+            Squeezy.
           </p>
           <p>
             <a href="/privacy/universal-data-extractor.html">Privacy Policy</a>
@@ -86,6 +111,9 @@
           <p>For product, support, or business inquiries:</p>
           <p>
             <a class="contact-email" href="mailto:avenrolabs@gmail.com">avenrolabs@gmail.com</a>
+          </p>
+          <p>
+            <a href="https://github.com/avenrolabs-wq">GitHub — avenrolabs-wq</a>
           </p>
         </div>
       </div>
